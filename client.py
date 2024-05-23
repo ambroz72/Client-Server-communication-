@@ -1,6 +1,6 @@
 import socket
 from tkinter import *
-# root=Tk()
+
 def send(listbox,entry):
     message=entry.get()
     listbox.insert('end','Client:'+message)
@@ -21,7 +21,6 @@ bt.pack(side=BOTTOM)
 rbt = Button(root, text='Recieve', command=lambda: receive(listbox))
 rbt.pack(side=BOTTOM)
 root.title('Client')
-
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 HOST_NAME=socket.gethostname()
