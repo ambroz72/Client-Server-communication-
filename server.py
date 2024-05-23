@@ -28,7 +28,4 @@ s.bind((HOST_NAME,PORT))
 s.listen(4)
 
 client,address=s.accept()
-# while True:
-#     message=input('Server:')
-#     client.send(bytes('hello,how are you ?','utf-8'))
 root.mainloop()
